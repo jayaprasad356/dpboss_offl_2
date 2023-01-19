@@ -12,8 +12,10 @@ import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -21,6 +23,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.cardview.widget.CardView;
@@ -70,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     SharedPreferences preferences;
     String url;
     String is_gateway = "0";
-//  CardView wallet_history;
+    //  CardView wallet_history;
     LinearLayout game_charts;
     SwipeRefreshLayout swiperefresh;
     private ImageView back;
@@ -102,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayout support;
     Button btnAddPoints;
     CardView cdNikalnahai;
-    Button JamaKarna,btnWithdrawal;
+    Button JamaKarna, btnWithdrawal;
     LinearLayout lautoDeposit;
     final int UPI_PAYMENT = 0;
 
@@ -144,16 +147,35 @@ public class MainActivity extends AppCompatActivity {
             hometext.setText("Loading...");
         }
         lautoDeposit.setOnClickListener(view -> {
-            try {
-                Date c = Calendar.getInstance().getTime();
-                SimpleDateFormat df = new SimpleDateFormat("ddMMyyyyHHmmss", Locale.getDefault());
-                String transcId = df.format(c);
-                payUsingUpi(""+Double.parseDouble("10"), constant.UPI_ID_VAL, constant.UPI_ID_VAL,transcId);
 
-            }catch (Exception e){
-                Log.d("PAYMENT_GATEWAY",e.getMessage());
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            LayoutInflater inflater = getLayoutInflater();
+            View dialogView = inflater.inflate(R.layout.dialog, null);
+            builder.setView(dialogView);
 
-            }
+
+            AlertDialog dialog = builder.create();
+            dialog.show();
+            Button paynow = dialogView.findViewById(R.id.paynow);
+            EditText addpoint = dialogView.findViewById(R.id.addpoint);
+            paynow.setOnClickListener(View -> {
+                dialog.dismiss();
+                if (addpoint.getText().toString().trim().isEmpty() || addpoint.getText().toString().trim().equals("0")) {
+                    Toast.makeText(this, "Enter Points", Toast.LENGTH_SHORT).show();
+                } else {
+                    try {
+                        Date c = Calendar.getInstance().getTime();
+                        SimpleDateFormat df = new SimpleDateFormat("ddMMyyyyHHmmss", Locale.getDefault());
+                        String transcId = df.format(c);
+                        payUsingUpi("" + Double.parseDouble("10"), constant.UPI_ID_VAL, constant.UPI_ID_VAL, transcId);
+
+                    } catch (Exception e) {
+                        Log.d("PAYMENT_GATEWAY", e.getMessage());
+
+                    }
+                }
+            });
+
 
         });
 
@@ -168,6 +190,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 openWhatsApp("sir add krna hai");
+                startActivity(new Intent(MainActivity.this, withdraw.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
             }
         });
         btnWithdrawal.setOnClickListener(new View.OnClickListener() {
@@ -237,11 +260,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
         // deposit_money.setOnClickListener(new View.OnClickListener() {
         //    @Override
         //    public void onClick(View v) {
-                //openWhatsApp("DEPOSIT REQUEST:");
+        //openWhatsApp("DEPOSIT REQUEST:");
         //        if (is_gateway.equals("1")) {
         //            startActivity(new Intent(MainActivity.this, deposit_money.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         //                    .putExtra("action", "deposit"));
@@ -262,6 +284,7 @@ public class MainActivity extends AppCompatActivity {
 //      wallet_history.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, played.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)));
 
     }
+
     void payUsingUpi(String amount, String upiId, String name, String transcId) {
 
         Uri uri = Uri.parse("upi://pay").buildUpon()
@@ -325,7 +348,7 @@ public class MainActivity extends AppCompatActivity {
             drawerItems.add(share);
             walletView.setVisibility(View.VISIBLE);
             homeMenu.setVisibility(View.VISIBLE);
-          //  games.setVisibility(View.VISIBLE);
+            //  games.setVisibility(View.VISIBLE);
         } else {
             drawerItems.add(home);
             drawerItems.add(howto);
@@ -739,18 +762,18 @@ public class MainActivity extends AppCompatActivity {
 //        return is_installed;
 //    }
 
-    private boolean isWhatappInstalled(){
+    private boolean isWhatappInstalled() {
 
         PackageManager packageManager = getPackageManager();
         boolean whatsappInstalled;
 
         try {
 
-            packageManager.getPackageInfo("com.whatsapp",PackageManager.GET_ACTIVITIES);
+            packageManager.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES);
             whatsappInstalled = true;
 
 
-        }catch (PackageManager.NameNotFoundException e){
+        } catch (PackageManager.NameNotFoundException e) {
 
             whatsappInstalled = false;
 
