@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+
+        <com.betplay.android.latonormal
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="02/11/2019"
+            android:gravity="center"
+            android:id="@+id/date"
+            android:padding="10dp"
+            android:textColor="@color/font"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+
+        <com.betplay.android.latonormal
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="200"
+            android:padding="10dp"
+            android:gravity="center"
+            android:id="@+id/amount"
+            android:textColor="@color/font"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            >
+            <com.betplay.android.latonormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Game played"
+                android:id="@+id/remark"
+                android:padding="10dp"
+                android:textColor="@color/font"
+                />
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_gravity="center"
+                android:layout_height="26dp"
+                android:id="@+id/delete"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_delete"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

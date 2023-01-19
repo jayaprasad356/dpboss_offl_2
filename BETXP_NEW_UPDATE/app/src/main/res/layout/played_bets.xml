@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.betplay.android.latonormal
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Open"
+        android:textColor="@color/font"
+        android:gravity="center"
+        android:id="@+id/game"
+        android:textSize="16sp"
+        android:padding="5dp"
+        />
+
+    <com.betplay.android.latonormal
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="@color/font"
+        android:id="@+id/bet"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:padding="5dp"
+        />
+
+
+    <com.betplay.android.latonormal
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:id="@+id/amount"
+        android:textColor="@color/font"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:padding="5dp"
+        />
+
+
+
+</LinearLayout>

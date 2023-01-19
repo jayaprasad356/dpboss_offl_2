@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MobileVerification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+        <com.betplay.android.latobold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightfont"
+            android:layout_marginTop="30dp"
+            android:textSize="30sp"
+            android:text="Verify phone number"
+            />
+
+        <com.betplay.android.latobold
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/font"
+            android:text="Check your sms inbox we've sent you a 6 digit one time password to verify your mobile number"
+            android:layout_marginBottom="40dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="6"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/otp_view"
+                android:textSize="30dp"
+                android:textColor="@color/font"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:id="@+id/otp1"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:maxLength="1"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/otp_view"
+                android:textSize="30dp"
+                android:textColor="@color/font"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:id="@+id/otp2"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:maxLength="1"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/otp_view"
+                android:textSize="30dp"
+                android:textColor="@color/font"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:id="@+id/otp3"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:maxLength="1"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/otp_view"
+                android:textSize="30dp"
+                android:textColor="@color/font"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:id="@+id/otp4"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:maxLength="1"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/otp_view"
+                android:textSize="30dp"
+                android:textColor="@color/font"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:id="@+id/otp5"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:maxLength="1"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/otp_view"
+                android:textSize="30dp"
+                android:textColor="@color/font"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:id="@+id/otp6"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:maxLength="1"
+                />
+
+
+        </LinearLayout>
+
+        <com.betplay.android.latobold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/md_white_1000"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Verify now"
+            android:background="@drawable/button"
+            android:id="@+id/verify"
+            />
+
+        <com.betplay.android.latobold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/lightfont"
+            android:text="Didn't you receive any code ?"
+            />
+
+        <com.betplay.android.latobold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/resend_button"
+            android:textColor="@color/font"
+            android:textSize="17sp"
+            android:text="Re-send code ?"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

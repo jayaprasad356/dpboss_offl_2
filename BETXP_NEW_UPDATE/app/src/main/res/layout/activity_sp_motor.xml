@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SpMotor">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+                app:cardBackgroundColor="@color/accent"
+                android:background="@color/background"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/back"
+                            android:layout_margin="15dp"
+                            app:cardElevation="5dp"
+                            app:cardCornerRadius="90dp"
+                            app:cardBackgroundColor="@color/md_black_1000"
+                            android:outlineAmbientShadowColor="@color/md_white_1000"
+                            android:outlineSpotShadowColor="@color/md_white_1000"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                app:tint="@color/accent"
+                                android:src="@drawable/back"
+                                android:layout_margin="10dp"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <com.betplay.android.latobold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/title"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:text="Place bet"
+                            android:textColor="@color/md_black_1000"
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/wallet_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/wallet_out"
+                        android:padding="10dp">
+
+                        <com.betplay.android.latobold
+                            android:id="@+id/balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Loading"
+                            android:textColor="@color/font"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:id="@+id/coin"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/coin" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:layout_margin="15dp"
+                            android:background="@color/primary"
+                            android:padding="3dp">
+
+                            <com.betplay.android.latobold
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:padding="15dp"
+                                android:text="DEC, 12 2021"
+                                android:textColor="@color/md_white_1000"
+                                android:textSize="24sp"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/type_container"
+                                android:layout_weight="6"
+                                android:background="@color/md_white_1000"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <com.betplay.android.latobold
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/open_game"
+                                    android:background="@color/primary"
+                                    android:textColor="@color/md_white_1000"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="OPEN"
+                                    />
+
+                                <com.betplay.android.latobold
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:id="@+id/close_game"
+                                    android:background="@color/gray"
+                                    android:gravity="center"
+                                    android:textColor="@color/font"
+                                    android:padding="10dp"
+                                    android:text="CLOSE"
+
+                                    />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <Spinner
+                            android:id="@+id/type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <com.betplay.android.latobold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="Bid Digits"
+                                    android:textColor="@color/md_black_1000"
+                                    android:textSize="15sp" />
+
+                                <EditText
+                                    android:id="@+id/number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:background="@drawable/edittext"
+                                    android:completionThreshold="0"
+                                    android:hint="Enter Digit"
+                                    android:inputType="number"
+                                    android:textSize="13sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <com.betplay.android.latobold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="Bid Points"
+                                    android:textColor="@color/md_black_1000"
+                                    android:textSize="15sp" />
+
+                                <EditText
+                                    android:id="@+id/amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:background="@drawable/edittext"
+                                    android:hint="Enter Amount"
+                                    android:inputType="number"
+                                    android:textSize="13sp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <com.betplay.android.latobold
+                            android:id="@+id/add"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="16sp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button"
+                            android:gravity="center_horizontal"
+                            android:text="ADD BID"
+                            android:textColor="@color/font" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone"
+                        android:background="#23000000" />
+
+
+                    <!--          <androidx.cardview.widget.CardView-->
+                    <!--              android:layout_width="match_parent"-->
+                    <!--              android:layout_height="wrap_content"-->
+                    <!--              android:layout_margin="15dp"-->
+                    <!--              app:cardCornerRadius="5dp"-->
+                    <!--              app:cardElevation="5dp">-->
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:orientation="vertical">-->
+
+
+                    <!--              <LinearLayout-->
+                    <!--                  android:layout_width="match_parent"-->
+                    <!--                  android:layout_height="wrap_content"-->
+                    <!--                  android:orientation="horizontal"-->
+                    <!--                  android:weightSum="4">-->
+
+                    <!--                <com.betplay.android.latonormal-->
+                    <!--                    android:layout_width="0dp"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_weight="1"-->
+                    <!--                    android:gravity="center"-->
+                    <!--                    android:padding="10dp"-->
+                    <!--                    android:text="Digit"-->
+                    <!--                    android:textColor="@color/font" />-->
+
+                    <!--                <View-->
+                    <!--                    android:layout_width="1dp"-->
+                    <!--                    android:layout_height="match_parent" />-->
+
+                    <!--                <com.betplay.android.latonormal-->
+                    <!--                    android:layout_width="0dp"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_weight="1"-->
+                    <!--                    android:gravity="center"-->
+                    <!--                    android:padding="10dp"-->
+                    <!--                    android:text="Amount"-->
+                    <!--                    android:textColor="@color/font" />-->
+
+                    <!--                <View-->
+                    <!--                    android:layout_width="1dp"-->
+                    <!--                    android:layout_height="match_parent" />-->
+
+
+                    <!--                <com.betplay.android.latonormal-->
+                    <!--                    android:layout_width="0dp"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_weight="2"-->
+                    <!--                    android:gravity="center"-->
+                    <!--                    android:padding="10dp"-->
+                    <!--                    android:text="Game type"-->
+                    <!--                    android:textColor="@color/font" />-->
+
+                    <!--              </LinearLayout>-->
+
+                    <!--              <View-->
+                    <!--                  android:layout_width="match_parent"-->
+                    <!--                  android:layout_height="1dp"-->
+                    <!--                  android:background="#31000000" />-->
+
+                    <!--              <androidx.recyclerview.widget.RecyclerView-->
+                    <!--                  android:id="@+id/recyclerview"-->
+                    <!--                  android:layout_width="match_parent"-->
+                    <!--                  android:layout_height="wrap_content"-->
+                    <!--                  android:minHeight="100dp"-->
+                    <!--                  android:nestedScrollingEnabled="true" />-->
+
+
+                    <!--            </LinearLayout>-->
+
+                    <!--          </androidx.cardview.widget.CardView>-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:id="@+id/digit_header"
+                        android:weightSum="4">
+
+                        <com.betplay.android.latonormal
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Digit"
+                            android:textColor="@color/md_white_1000" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent" />
+
+                        <com.betplay.android.latonormal
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Amount"
+                            android:textColor="@color/md_white_1000" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent" />
+
+
+                        <com.betplay.android.latonormal
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Game type"
+                            android:textColor="@color/md_white_1000" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:gravity="end"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="10dp">
+
+                        <com.betplay.android.latonormal
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="5dp"
+                            android:text="Total"
+                            android:textColor="@color/font"
+                            android:textSize="22sp" />
+
+                        <EditText
+                            android:id="@+id/totalamount"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/edittext"
+                            android:focusable="false"
+                            android:hint=""
+                            android:inputType="number"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+                    <com.betplay.android.latobold
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="16sp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/primary"
+                        android:padding="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="Submit"
+                        android:textColor="@color/font" />
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

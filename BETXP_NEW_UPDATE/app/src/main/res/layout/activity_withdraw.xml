@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".withdraw">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="@color/background"
+            app:cardBackgroundColor="@color/accent"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/back"
+                    android:layout_margin="15dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="90dp"
+                    app:cardBackgroundColor="@color/md_black_1000"
+                    android:outlineAmbientShadowColor="@color/md_white_1000"
+                    android:outlineSpotShadowColor="@color/md_white_1000"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        app:tint="@color/accent"
+                        android:src="@drawable/back"
+                        android:layout_margin="10dp"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <com.betplay.android.latobold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/md_black_1000"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Withdraw Money"
+                    />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext2"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/amount"
+                    android:hint="Enter amount"
+                    android:inputType="number"
+                    android:textSize="13sp"
+                    />
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext2"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/mode"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="13sp"
+                    />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext2"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/info"
+                    android:lines="6"
+                    android:gravity="top|left"
+                    android:hint="Payment Details"
+                    android:inputType="textMultiLine"
+                    android:textSize="13sp"
+                    />
+
+
+                <com.betplay.android.latobold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Request Withdraw"
+                    android:background="@drawable/button"
+                    android:id="@+id/submit"
+                    android:textColor="#fff"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="16sp"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_btn"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/whatsapp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/whatsapp"
+            />
+
+        <com.betplay.android.latobold
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="Direct Withdraw"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/font"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

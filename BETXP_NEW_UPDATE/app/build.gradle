@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
+    defaultConfig {
+        applicationId "com.matka.games.app.user"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 4
+        versionName "1.0.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation "com.mikepenz:materialdrawer:6.1.2"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.2.1'
+    implementation 'lib.kingja.switchbutton:switchbutton:1.1.8'
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+    implementation 'com.github.iwgang:countdownview:2.1.6'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+}

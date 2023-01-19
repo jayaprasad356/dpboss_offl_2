@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RedBracket">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+                app:cardBackgroundColor="@color/accent"
+                android:background="@color/background"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/back"
+                            android:layout_margin="15dp"
+                            app:cardElevation="5dp"
+                            app:cardCornerRadius="90dp"
+                            app:cardBackgroundColor="@color/md_black_1000"
+                            android:outlineAmbientShadowColor="@color/md_white_1000"
+                            android:outlineSpotShadowColor="@color/md_white_1000"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                app:tint="@color/accent"
+                                android:src="@drawable/back"
+                                android:layout_margin="10dp"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                        <com.betplay.android.latobold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/title"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:text="Place bet"
+                            android:textColor="@color/font"
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/wallet_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/wallet_out"
+                        android:padding="10dp">
+
+                        <com.betplay.android.latobold
+                            android:id="@+id/balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Loading"
+                            android:textColor="@color/font"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:id="@+id/coin"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/coin" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@color/primary"
+                    android:padding="3dp">
+
+                    <com.betplay.android.latobold
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="DEC, 12 2021"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="24sp"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/type_container"
+                        android:visibility="gone"
+                        android:layout_weight="6"
+                        android:background="@color/md_white_1000"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <com.betplay.android.latobold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/open_game"
+                            android:background="@color/primary"
+                            android:textColor="@color/md_white_1000"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="OPEN"
+                            />
+
+                        <com.betplay.android.latobold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/close_game"
+                            android:background="@color/gray"
+                            android:gravity="center"
+                            android:textColor="@color/font"
+                            android:padding="10dp"
+                            android:text="CLOSE"
+
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <Spinner
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/edittext"
+                    android:padding="5dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@color/primary"
+                        android:padding="3dp">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:background="@color/md_white_1000"
+                            android:padding="10dp">
+
+                            <com.betplay.android.latobold
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:background="@color/primary"
+                                android:textColor="@color/font"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="Half Red Bracket"
+                                android:id="@+id/odd"
+                                android:layout_marginRight="5dp"
+                                />
+
+                            <com.betplay.android.latobold
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:id="@+id/even"
+                                android:background="@color/gray"
+                                android:gravity="center"
+                                android:textColor="@color/font"
+                                android:padding="10dp"
+                                android:text="Full Red Bracket"
+
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <com.betplay.android.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Bid Digits"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="15sp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/primary"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:id="@+id/full_bracket"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="00"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="11"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="22"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="33"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="44"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="55"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="66"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="77"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="88"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="99"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:id="@+id/half_bracket"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:padding="5dp"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="05"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="16"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="27"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="38"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="49"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:padding="5dp"
+                                    android:layout_height="wrap_content">
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="50"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="61"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="72"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="83"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="10dp"
+                                        >
+
+                                        <de.hdodenhof.circleimageview.CircleImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            app:civ_border_width="1dp"
+                                            app:civ_border_color="@color/font"
+                                            android:src="@color/md_white_1000"
+                                            />
+
+                                        <com.betplay.android.latobold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:text="94"
+                                            android:textColor="@color/font"
+                                            android:textSize="16sp"
+                                            />
+
+                                    </RelativeLayout>
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </HorizontalScrollView>
+
+                    <com.betplay.android.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Bid Points"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/edittext"
+                        android:hint="Enter Amount"
+                        android:inputType="number"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+
+                <com.betplay.android.latobold
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16sp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/primary"
+                    android:padding="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="Submit"
+                    android:textColor="@color/font" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

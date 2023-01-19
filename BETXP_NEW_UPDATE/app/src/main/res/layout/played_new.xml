@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:background="@color/accent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.betplay.android.latonormal
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/market"
+                    android:text="Kalyan Night"
+                    android:textColor="@color/font"
+                    android:textSize="15sp"
+                    />
+
+                <com.betplay.android.latonormal
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Date - 26 Feb 2021"
+                    android:textColor="@color/font"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:id="@+id/date"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.betplay.android.latonormal
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Game"
+                    android:textColor="@color/font"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:id="@+id/game"
+                    />
+
+                <com.betplay.android.latonormal
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Bet"
+                    android:textColor="@color/font"
+                    android:id="@+id/bet"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    />
+
+
+                <com.betplay.android.latonormal
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:id="@+id/amount"
+                    android:textColor="@color/font"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.betplay.android.latobold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Total Game Amount - 2000"
+                android:textColor="@color/font"
+                android:padding="10dp"
+                android:gravity="right"
+                android:id="@+id/total"
+                />
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

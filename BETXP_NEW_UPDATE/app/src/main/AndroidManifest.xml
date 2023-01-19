@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.betplay.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".TransactionList"
+            android:exported="false" />
+        <activity
+            android:name=".Support"
+            android:exported="false" />
+        <activity
+            android:name=".starline_games"
+            android:exported="false" />
+        <activity
+            android:name=".starline_timings"
+            android:exported="false" />
+        <activity
+            android:name=".starline_markets"
+            android:exported="false" />
+        <activity
+            android:name=".adapter_number_circles"
+            android:exported="false" />
+        <activity
+            android:name=".SpDpTp"
+            android:exported="false" />
+        <activity
+            android:name=".SpMotor"
+            android:exported="false" />
+        <activity
+            android:name=".RedBracket"
+            android:exported="false" />
+        <activity
+            android:name=".OddEven"
+            android:exported="false" />
+        <activity
+            android:name=".WithdrawDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".MobileVerification"
+            android:exported="false" />
+        <activity android:name=".withdraw" />
+        <activity android:name=".single_bet" />
+        <activity android:name=".games" />
+        <activity android:name=".deposit_money" />
+        <activity android:name=".webview" />
+        <activity android:name=".chart_menu" />
+        <activity android:name=".charts" />
+        <activity android:name=".crossing" />
+        <activity android:name=".earn" />
+        <activity android:name=".fullsangam" />
+        <activity android:name=".halfsangam" />
+        <activity android:name=".betting" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ledger" />
+        <activity android:name=".transactions" />
+        <activity android:name=".played" />
+        <activity android:name=".howot" />
+        <activity android:name=".thankyou" />
+        <activity android:name=".bazar" />
+        <activity android:name=".notice" />
+        <activity android:name=".rate" />
+        <activity android:name=".profile" />
+        <activity android:name=".signup" />
+        <activity android:name=".login" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

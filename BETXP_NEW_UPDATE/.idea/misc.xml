@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ASMSmaliIdeaPluginConfiguration">
+    <asm skipDebug="true" skipFrames="true" skipCode="false" expandFrames="false" />
+    <groovy codeStyle="LEGACY" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/drawable/betedittext2.xml" value="0.24" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/drawable/game_box.xml" value="0.2295" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/drawable/game_white_button.xml" value="0.2295" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_adapter_number_circles.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_bazar.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_betting.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_chart_menu.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_charts.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_crossing.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_deposit_money.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_earn.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_forgot_password.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_fullsangam.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_games.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_halfsangam.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_howot.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_ledger.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_login.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_mobile_verification.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_notice.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_odd_even.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_played.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_profile.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_rate.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_red_bracket.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_signup.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_singe_bet.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_sp_dp_tp.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_sp_motor.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_splash.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_starline_games.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_starline_markets.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_starline_timings.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_support.xml" value="0.29022988505747127" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_thankyou.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_transaction_list.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_transactions.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_webview.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_withdraw.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/activity_withdraw_details.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/betlayout.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/chart_layout.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/footer.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/header.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/image_slider_layout_item.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/market_layout.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/market_starline_layout.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/market_time.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/market_timing_layout.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/msg_dialog_error.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/number_circle_item.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/played.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/played_bets.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/played_new.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/progress.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/result_layout.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/simple_list_item_1.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/single_bet_popup.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/single_bets.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/starline_result_layout.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/transaction.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/balaji games/app/app/src/main/res/layout/transaction_new.xml" value="0.3614583333333333" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/m play online/android_app/app/src/main/res/drawable/dark_button.xml" value="0.37864583333333335" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/m play online/android_app/app/src/main/res/drawable/green_button.xml" value="0.37864583333333335" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/m play online/android_app/app/src/main/res/drawable/login_card.xml" value="0.37864583333333335" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/m play online/android_app/app/src/main/res/layout/activity_earn.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/m play online/android_app/app/src/main/res/layout/activity_forgot_password.xml" value="0.3484375" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/m play online/android_app/app/src/main/res/layout/activity_login.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/m play online/android_app/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/m play online/android_app/app/src/main/res/layout/activity_mobile_verification.xml" value="0.3484375" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/m play online/android_app/app/src/main/res/layout/activity_signup.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/m play online/android_app/app/src/main/res/layout/footer.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/m play online/android_app/app/src/main/res/layout/header.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka star/app/src/main/res/layout/activity_login.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka star/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka star/app/src/main/res/layout/activity_signup.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka star/app/src/main/res/layout/activity_splash.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka_games/app/src/main/res/layout/activity_betting.xml" value="0.2421875" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka_games/app/src/main/res/layout/activity_deposit_money.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka_games/app/src/main/res/layout/activity_games.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka_games/app/src/main/res/layout/activity_login.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka_games/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka_games/app/src/main/res/layout/activity_red_bracket.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka_games/app/src/main/res/layout/activity_signup.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka_games/app/src/main/res/layout/activity_sp_motor.xml" value="0.2421875" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka_games/app/src/main/res/layout/activity_splash.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka_games/app/src/main/res/layout/activity_withdraw.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka_games/app/src/main/res/layout/activity_withdraw_details.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/matka_games/app/src/main/res/layout/result_layout.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/drawable/blank.xml" value="0.273" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/drawable/blue_button.xml" value="0.273" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/drawable/button.xml" value="0.273" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/drawable/edittext.xml" value="0.273" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/drawable/edittext4.xml" value="0.273" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/drawable/nav_menu.xml" value="0.273" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/drawable/thumb_selector.xml" value="0.273" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/drawable/track_selector.xml" value="0.273" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_adapter_number_circles.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_bazar.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_betting.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_chart_menu.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_charts.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_crossing.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_deposit_money.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_earn.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_forgot_password.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_fullsangam.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_games.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_halfsangam.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_howot.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_ledger.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_login.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_mobile_verification.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_notice.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_odd_even.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_played.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_profile.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_rate.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_red_bracket.xml" value="0.3484375" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_signup.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_singe_bet.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_sp_dp_tp.xml" value="0.3484375" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_sp_motor.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_splash.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_starline_games.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_starline_markets.xml" value="0.3484375" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_starline_timings.xml" value="0.3484375" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_thankyou.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_transactions.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_webview.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_withdraw.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/activity_withdraw_details.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/betlayout.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/chart_layout.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/footer.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/header.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/image_slider_layout_item.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/market_starline_layout.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/market_timing_layout.xml" value="0.2421875" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/number_circle_item.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/played.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/result_layout.xml" value="0.3625" />
+        <entry key="..\:/Thinktank/CodeCanyon/Betting/projects/shivam jodhpur/mplay doller/m play online/android_app/app/src/main/res/layout/starline_result_layout.xml" value="0.2421875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

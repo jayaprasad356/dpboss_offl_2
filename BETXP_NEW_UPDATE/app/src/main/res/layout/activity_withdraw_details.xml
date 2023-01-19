@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WithdrawDetails">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/primary"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/back"
+                    android:layout_margin="15dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="90dp"
+                    app:cardBackgroundColor="@color/md_black_1000"
+                    android:outlineAmbientShadowColor="@color/md_white_1000"
+                    android:outlineSpotShadowColor="@color/md_white_1000"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        app:tint="@color/accent"
+                        android:src="@drawable/back"
+                        android:layout_margin="10dp"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <com.betplay.android.latobold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Payment Details"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+
+
+                <com.betplay.android.latobold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter UPI ID/VPA"
+                    android:textColor="@color/font"
+                    android:textSize="13sp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="5dp"
+                    android:hint="UPI"
+                    android:textSize="13sp"
+                    android:id="@+id/upi"
+                    />
+
+
+                <com.betplay.android.latobold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Account Number"
+                    android:textColor="@color/font"
+                    android:textSize="13sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="5dp"
+                    android:hint="Enter Bank Account Number"
+                    android:textSize="13sp"
+                    android:id="@+id/acno"
+                    />
+
+
+                <com.betplay.android.latobold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Holder Name"
+                    android:textColor="@color/font"
+                    android:textSize="13sp"
+                    android:layout_marginTop="15dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="5dp"
+                    android:hint="Enter Account Holder Name"
+                    android:textSize="13sp"
+                    android:id="@+id/email"
+                    android:inputType="textEmailAddress"
+                    />
+
+                <com.betplay.android.latobold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IFSC Code"
+                    android:textColor="@color/font"
+                    android:textSize="13sp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/mobile"
+                    android:hint="Enter IFSC Code"
+                    android:textSize="13sp"
+                    />
+
+
+                <com.betplay.android.latobold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ADD PAYMENT METHOD"
+                    android:background="@drawable/button"
+                    android:id="@+id/submit"
+                    android:textColor="@color/font"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="16sp"
+                    />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

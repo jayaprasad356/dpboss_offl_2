@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.betplay.dpboss_off">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.betplay.dpboss_off.TransactionList"
+            android:exported="false" />
+        <activity
+            android:name="com.betplay.dpboss_off.Support"
+            android:exported="false" />
+        <activity
+            android:name="com.betplay.dpboss_off.starline_games"
+            android:exported="false" />
+        <activity
+            android:name="com.betplay.dpboss_off.starline_timings"
+            android:exported="false" />
+        <activity
+            android:name="com.betplay.dpboss_off.starline_markets"
+            android:exported="false" />
+        <activity
+            android:name="com.betplay.dpboss_off.adapter_number_circles"
+            android:exported="false" />
+        <activity
+            android:name="com.betplay.dpboss_off.SpDpTp"
+            android:exported="false" />
+        <activity
+            android:name="com.betplay.dpboss_off.SpMotor"
+            android:exported="false" />
+        <activity
+            android:name="com.betplay.dpboss_off.RedBracket"
+            android:exported="false" />
+        <activity
+            android:name="com.betplay.dpboss_off.OddEven"
+            android:exported="false" />
+        <activity
+            android:name="com.betplay.dpboss_off.WithdrawDetails"
+            android:exported="false" />
+        <activity
+            android:name="com.betplay.dpboss_off.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name="com.betplay.dpboss_off.MobileVerification"
+            android:exported="false" />
+        <activity android:name="com.betplay.dpboss_off.withdraw" />
+        <activity android:name="com.betplay.dpboss_off.single_bet" />
+        <activity android:name="com.betplay.dpboss_off.games" />
+        <activity android:name="com.betplay.dpboss_off.deposit_money" />
+        <activity android:name="com.betplay.dpboss_off.webview" />
+        <activity android:name="com.betplay.dpboss_off.chart_menu" />
+        <activity android:name="com.betplay.dpboss_off.charts" />
+        <activity android:name="com.betplay.dpboss_off.crossing" />
+        <activity android:name="com.betplay.dpboss_off.earn" />
+        <activity android:name="com.betplay.dpboss_off.fullsangam" />
+        <activity android:name="com.betplay.dpboss_off.halfsangam" />
+        <activity android:name="com.betplay.dpboss_off.betting" />
+        <activity android:name="com.betplay.dpboss_off.splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.betplay.dpboss_off.ledger" />
+        <activity android:name="com.betplay.dpboss_off.transactions" />
+        <activity android:name="com.betplay.dpboss_off.played" />
+        <activity android:name="com.betplay.dpboss_off.howot" />
+        <activity android:name="com.betplay.dpboss_off.thankyou" />
+        <activity android:name="com.betplay.dpboss_off.bazar" />
+        <activity android:name="com.betplay.dpboss_off.notice" />
+        <activity android:name="com.betplay.dpboss_off.rate" />
+        <activity android:name="com.betplay.dpboss_off.profile" />
+        <activity android:name="com.betplay.dpboss_off.signup" />
+        <activity android:name="com.betplay.dpboss_off.login" />
+        <activity android:name="com.betplay.dpboss_off.MainActivity" />
+    </application>
+
+</manifest>

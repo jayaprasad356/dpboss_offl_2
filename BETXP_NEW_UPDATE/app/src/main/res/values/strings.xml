@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Balaji Games</string>
+
+    <!--APIs-->
+    <string name="market_api">market.php</string>
+    <string name="market_list">market_list.php</string>
+    <string name="bet">bet.php</string>
+    <string name="charts">charts.php</string>
+    <string name="sangam">sangam.php</string>
+    <string name="content">content.php</string>
+    <string name="ledger">gameledger.php</string>
+    <string name="login">login.php</string>
+    <string name="home">home.php</string>
+    <string name="games">games.php</string>
+    <string name="profile">profile.php</string>
+    <string name="password">password.php</string>
+    <string name="rate">rate.php</string>
+    <string name="register">register.php</string>
+    <string name="transaction">transaction.php</string>
+    <string name="get_gateway">get_gateway.php</string>
+    <string name="getconfig">get_config.php</string>
+    <string name="withdraw_modes">withdraw_modes.php</string>
+    <string name="withdraw_request">withdraw_request.php</string>
+
+    <string name="market_list_starline">market_list_starline.php</string>
+    <string name="starline_timings">starline_timings.php</string>
+    <string name="resend_otp">Re-send code ?</string>
+
+    <string name="gpay">com.google.android.apps.nbu.paisa.user</string>
+    <string name="paytm">net.one97.paytm</string>
+    <string name="phonepe">com.phonepe.app</string>
+</resources>

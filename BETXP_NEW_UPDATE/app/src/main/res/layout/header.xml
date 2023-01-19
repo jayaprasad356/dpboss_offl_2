@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/md_white_1000"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/nav_head_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        android:elevation="0.1dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="60dp">
+
+        <ImageView
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/king_ig" />
+
+        <com.betplay.android.latobold
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/md_black_1000"
+            android:textFontWeight="600"
+            android:textSize="17sp" />
+
+        <com.betplay.android.latobold
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/md_black_1000"
+            android:textFontWeight="600"
+            android:textSize="17sp" />
+
+        <com.betplay.android.latonormal
+            android:id="@+id/view_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="VIEW PROFILE"
+            android:textColor="@color/md_white_1000"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#48FFFFFF" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="14dp"
+            android:visibility="gone">
+
+            <com.betplay.android.latobold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/resultNotification"
+                android:layout_weight="1"
+                android:text="App Notification"
+                android:textColor="@color/md_white_1000"
+                android:textSize="16sp" />
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/resultNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:thumb="@drawable/thumb_selector"
+                app:track="@drawable/track_selector" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/md_white_1000"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <com.betplay.android.latobold
+                android:id="@+id/deposit_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/green_button"
+                android:gravity="center"
+                android:text="DEPOSIT"
+                android:textColor="@color/md_white_1000"
+
+                />
+
+            <com.betplay.android.latobold
+                android:id="@+id/withdraw_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/redbutton"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="WITHDRAW"
+                android:textColor="@color/md_white_1000"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/nav_head_block"
+        android:layout_height="wrap_content"
+        android:src="@drawable/side_ar"
+        android:tint="@color/accent"
+        />
+
+</RelativeLayout>

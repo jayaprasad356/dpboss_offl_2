@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".TransactionList">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:background="#B9000000"
+        android:id="@+id/date_filter"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+                <com.betplay.android.latobold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_button"
+                    android:gravity="center_horizontal"
+                    android:text="Date Filter"
+                    android:textColor="@color/font"
+                    android:textFontWeight="600"
+                    android:textSize="16sp" />
+
+                <com.betplay.android.latobold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/font"
+                    android:padding="5dp"
+                    android:textSize="13sp"
+                    android:text="Select From and To date to show all transaction between two dates"
+                    />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/from_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="From Date"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="date"
+                        android:padding="15dp"
+                        android:textSize="13sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/to_date"
+                        android:layout_width="match_parent"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_height="wrap_content"
+                        android:hint="To Date"
+                        android:inputType="date"
+                        android:padding="15dp"
+                        android:textSize="13sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                <com.betplay.android.latobold
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12sp"
+                    android:background="@drawable/blue_button"
+                    android:gravity="center_horizontal"
+                    android:text="Show Results"
+                    android:textColor="@color/font"
+                    android:textFontWeight="600"
+                    android:textSize="16sp" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            app:cardBackgroundColor="@color/accent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:outlineAmbientShadowColor="@color/md_white_1000"
+                        android:outlineSpotShadowColor="@color/md_white_1000"
+                        app:cardBackgroundColor="@color/md_black_1000"
+                        app:cardCornerRadius="90dp"
+                        app:cardElevation="5dp">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/back"
+                            app:tint="@color/accent" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <com.betplay.android.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="Transactions"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/filter"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="8dp"
+                    android:src="@drawable/filter_icon" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.betplay.android.latobold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/accent"
+                    android:gravity="center"
+                    android:id="@+id/description"
+                    android:padding="5dp"
+                    android:text="TODAY"
+                    android:textColor="@color/font" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <com.betplay.android.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textColor="@color/md_black_1000" />
+
+                    <com.betplay.android.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Received"
+                        android:textColor="@color/figma_green" />
+
+                    <com.betplay.android.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Paid"
+                        android:textColor="@color/figma_red" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
