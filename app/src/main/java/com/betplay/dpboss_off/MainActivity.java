@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
         JamaKarna.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openWhatsApp("sir add krna hai");
+//                openWhatsApp("sir add krna hai");
                 startActivity(new Intent(MainActivity.this, withdraw.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
             }
         });

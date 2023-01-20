@@ -65,7 +65,7 @@ public class withdraw extends AppCompatActivity {
         });
         info = findViewById(R.id.info);
         amount = findViewById(R.id.amount);
-        mode = findViewById(R.id.mode);
+//        mode = findViewById(R.id.mode);
         findViewById(R.id.whatsapp).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -133,23 +133,7 @@ public class withdraw extends AppCompatActivity {
                                     (withdraw.this, R.layout.simple_list_item_1,
                                             payment_mode);
 
-                            mode.setAdapter(spinnerArrayAdapter);
 
-                            mode.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-                                @Override
-                                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                                    if (position != 0) {
-                                        info.setHint(payment_info.get(position - 1));
-                                    } else {
-                                        info.setHint("Select Payment Method");
-                                    }
-                                }
-
-                                @Override
-                                public void onNothingSelected(AdapterView<?> parent) {
-
-                                }
-                            });
 
 
                         } catch (JSONException e) {

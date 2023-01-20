@@ -98,32 +98,7 @@
                     />
 
 
-                <Spinner
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edittext2"
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/mode"
-                    android:paddingLeft="5dp"
-                    android:paddingRight="5dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:textSize="13sp"
-                    />
 
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/edittext2"
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/info"
-                    android:lines="6"
-                    android:gravity="top|left"
-                    android:hint="Payment Details"
-                    android:inputType="textMultiLine"
-                    android:textSize="13sp"
-                    />
 
 
                 <com.betplay.dpboss_off.latobold
